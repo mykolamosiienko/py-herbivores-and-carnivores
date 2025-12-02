@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 class Animal:
 
     alive = []
@@ -9,7 +11,7 @@ class Animal:
         Animal.alive.append(self)
 
     def __repr__(self) -> str:
-        anim ={}
+        anim = {}
         anim["Name"] = self.name
         anim["Health"] = self.health
         anim["Hidden"] = self.hidden
